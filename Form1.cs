@@ -9,9 +9,52 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace InventorySystem {
-    public partial class Form1 : Form {
-        public Form1() {
+    public partial class InventorySystem : Form {
+
+        DataTable inventory = new DataTable();
+        public InventorySystem() {
             InitializeComponent();
+        }
+
+        private void newButton_Click(object sender, EventArgs e) {
+            macTextBox.Text             = "";
+            nameTextBox.Text            = "";
+            serialTextBox.Text          = "";
+            descriptionTextBox.Text     = "";
+            locationTextBox.Text        = "";
+        }
+
+        private void saveButton_Click(object sender, EventArgs e) {
+            String mac           = macTextBox.Text;
+            String name          = nameTextBox.Text;
+            String serial        = serialTextBox.Text;
+            String description   = descriptionTextBox.Text;
+            String location      = locationTextBox.Text;
+
+            if (mac != "") {
+                inventory.Rows.Add(mac, name, serial, description, location);
+
+                newButton_Click(sender, e);
+            }
+        }
+
+        private void deleteButton_Click(object sender, EventArgs e) {
+            Console.WriteLine("Delete Button Clicked");
+        }
+
+        private void InventoryGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+
+        }
+
+        private void InventorySystem_Load(object sender, EventArgs e) {
+            inventory.Columns.Add("MAC ADDRESS");
+            inventory.Columns.Add("NAME");
+            inventory.Columns.Add("SERIAL NO");
+            inventory.Columns.Add("DESCRIPTION");
+            inventory.Columns.Add("LOCATION");
+
+            InventoryGridView1.DataSource = inventory;
+
         }
     }
 }
