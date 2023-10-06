@@ -1,0 +1,11 @@
+C:\Users\Angel\Desktop\Repos\InventorySystem\bin\Debug\InventorySystem.exe.config
+C:\Users\Angel\Desktop\Repos\InventorySystem\bin\Debug\InventorySystem.exe
+C:\Users\Angel\Desktop\Repos\InventorySystem\bin\Debug\InventorySystem.pdb
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.csproj.AssemblyReference.cache
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.csproj.SuggestedBindingRedirects.cache
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.InventorySystem.resources
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.Properties.Resources.resources
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.csproj.GenerateResource.cache
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.csproj.CoreCompileInputs.cache
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.exe
+C:\Users\Angel\Desktop\Repos\InventorySystem\obj\Debug\InventorySystem.pdb
