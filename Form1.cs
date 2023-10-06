@@ -47,7 +47,19 @@ namespace InventorySystem {
         }
 
         private void InventoryGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {
+            try {
 
+                macTextBox.Text = inventory.Rows[InventoryGridView1.CurrentCell.RowIndex].ItemArray[0].ToString();
+                nameTextBox.Text = inventory.Rows[InventoryGridView1.CurrentCell.RowIndex].ItemArray[1].ToString();
+                serialTextBox.Text = inventory.Rows[InventoryGridView1.CurrentCell.RowIndex].ItemArray[2].ToString();
+                descriptionTextBox.Text = inventory.Rows[InventoryGridView1.CurrentCell.RowIndex].ItemArray[3].ToString();
+                locationTextBox.Text = inventory.Rows[InventoryGridView1.CurrentCell.RowIndex].ItemArray[4].ToString();
+
+
+
+            } catch (Exception ex) {
+                Console.WriteLine(ex.StackTrace);
+            }
         }
 
         private void InventorySystem_Load(object sender, EventArgs e) {
