@@ -39,7 +39,11 @@ namespace InventorySystem {
         }
 
         private void deleteButton_Click(object sender, EventArgs e) {
-            Console.WriteLine("Delete Button Clicked");
+            try {
+                inventory.Rows.RemoveAt(InventoryGridView1.CurrentCell.RowIndex);
+            }catch (Exception ex) {
+                Console.WriteLine(ex.StackTrace);
+            }
         }
 
         private void InventoryGridView1_CellDoubleClick(object sender, DataGridViewCellEventArgs e) {

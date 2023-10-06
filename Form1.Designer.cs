@@ -200,6 +200,7 @@
             this.InventoryGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.InventoryGridView1.Location = new System.Drawing.Point(0, 155);
             this.InventoryGridView1.Name = "InventoryGridView1";
+            this.InventoryGridView1.ReadOnly = true;
             this.InventoryGridView1.Size = new System.Drawing.Size(1240, 502);
             this.InventoryGridView1.TabIndex = 0;
             this.InventoryGridView1.CellDoubleClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.InventoryGridView1_CellDoubleClick);
